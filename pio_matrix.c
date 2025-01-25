@@ -4,12 +4,18 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 #include "hardware/clocks.h"
+
 #include "hardware/adc.h"
 #include "pico/bootrom.h"
+#include "hardware/pwm.h"
 
 #include "pio_matrix.pio.h"
+// #include "ws2818b.pio.h"
 
 #include "animacao_exe.h"
+#include "animate_HCVS.h"
+
+
 
 #define NUM_PIXELS 25
 
@@ -121,7 +127,7 @@ void start_buzzer(uint32_t duration_ms) {
   gpio_put(BUZZER_PIN, 0);
 }
 
-double leds[25] = {1.0, 1.0, 1.0, 1.0, 1.0,
+double leds2[25] = {1.0, 1.0, 1.0, 1.0, 1.0,
                    1.0, 1.0, 1.0, 1.0, 1.0,
                    1.0, 1.0, 1.0, 1.0, 1.0,
                    1.0, 1.0, 1.0, 1.0, 1.0,
@@ -196,23 +202,28 @@ int main()
 
     if (tecla == TECLA_A)
     {
-      desenho_pio(leds, valor_led, pio, sm, 0.0, 0.0, 0.0);
+      desenho_pio(leds2
+    , valor_led, pio, sm, 0.0, 0.0, 0.0);
     }
     else if (tecla == TECLA_B)
     {
-      desenho_pio(leds, valor_led, pio, sm, 0.0, 0.0, 1.0);
+      desenho_pio(leds2
+    , valor_led, pio, sm, 0.0, 0.0, 1.0);
     }
     else if (tecla == TECLA_C)
     {
-      desenho_pio(leds, valor_led, pio, sm, 0.5, 0.0, 0.0);
+      desenho_pio(leds2
+    , valor_led, pio, sm, 0.5, 0.0, 0.0);
     }
     else if (tecla == TECLA_D)
     {
-      desenho_pio(leds, valor_led, pio, sm, 0.0, 0.3, 0.0);
+      desenho_pio(leds2
+    , valor_led, pio, sm, 0.0, 0.3, 0.0);
     }
     else if (tecla == TECLA_HASH)
     {
-      desenho_pio(leds, valor_led, pio, sm, 0.2, 0.2, 0.2);
+      desenho_pio(leds2
+    , valor_led, pio, sm, 0.2, 0.2, 0.2);
     }
     else if (tecla == TECLA_ESTRELA)
     {
@@ -223,9 +234,19 @@ int main()
       for (int i = 0; i < 4; i++)
       {
         start_buzzer(500);
-        animacao_exe(leds, valor_led, pio, sm);
+        animacao_exe(leds2
+      , valor_led, pio, sm);
       }
     }
+    else if (tecla == TECLA_2)
+    {
+      for (int i = 0; i < 4; i++)
+      {
+        start_buzzer(500);
+        animate_HCVS();
+      }
+    }
+
 
     sleep_ms(500);
     printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));
