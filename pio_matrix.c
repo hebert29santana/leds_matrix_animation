@@ -10,7 +10,7 @@
 #include "hardware/pwm.h"
 
 #include "pio_matrix.pio.h"
-// #include "ws2818b.pio.h"
+// #include "ws2818b.pio.h" // Não precisa mais chamar essa biblioteca aqui
 
 #include "animacao_exe.h"
 #include "animate_HCVS.h"
@@ -169,6 +169,7 @@ void desenho_pio(double *desenho, uint32_t valor_led, PIO pio, uint sm, double r
   imprimir_binario(valor_led);
 }
 
+// Função Principal
 int main()
 {
   PIO pio = pio0;
@@ -200,36 +201,36 @@ int main()
 
     char tecla = ler_tecla();
 
-    if (tecla == TECLA_A)
+    if (tecla == TECLA_A) // Desliga os Leds
     {
       desenho_pio(leds2
     , valor_led, pio, sm, 0.0, 0.0, 0.0);
     }
-    else if (tecla == TECLA_B)
+    else if (tecla == TECLA_B) // Liga Leds Azuis 100%
     {
       desenho_pio(leds2
     , valor_led, pio, sm, 0.0, 0.0, 1.0);
     }
-    else if (tecla == TECLA_C)
+    else if (tecla == TECLA_C) // Liga Leds Vermelhos em 80%
     {
       desenho_pio(leds2
-    , valor_led, pio, sm, 0.5, 0.0, 0.0);
+    , valor_led, pio, sm, 0.8, 0.0, 0.0);
     }
-    else if (tecla == TECLA_D)
+    else if (tecla == TECLA_D) // Liga Leds Verdes em 50%
     {
       desenho_pio(leds2
-    , valor_led, pio, sm, 0.0, 0.3, 0.0);
+    , valor_led, pio, sm, 0.0, 0.5, 0.0);
     }
-    else if (tecla == TECLA_HASH)
+    else if (tecla == TECLA_HASH) // Liga Leds Branncos em 20%
     {
       desenho_pio(leds2
     , valor_led, pio, sm, 0.2, 0.2, 0.2);
     }
-    else if (tecla == TECLA_ESTRELA)
+    else if (tecla == TECLA_ESTRELA) // Reboot
     {
       reset_usb_boot(0, 0);
     }
-    else if (tecla == TECLA_0)
+    else if (tecla == TECLA_0) // Animação de Teste by Welton
     {
       for (int i = 0; i < 4; i++)
       {
@@ -238,7 +239,7 @@ int main()
       , valor_led, pio, sm);
       }
     }
-    else if (tecla == TECLA_2)
+    else if (tecla == TECLA_2) // Animação 2 by Hebert Santana
     {
       for (int i = 0; i < 4; i++)
       {

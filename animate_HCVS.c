@@ -53,9 +53,9 @@ void ledInit(uint pin) {
 
 // Define um LED com cores específicas e sua intensidade
 void ledSETColor(const uint index, const uint8_t r, const uint8_t g, const uint8_t b) {
-    leds[index].R = r * 0.3;
-    leds[index].G = g * 0.3;
-    leds[index].B = b * 0.3;
+    leds[index].R = r * 0.7;
+    leds[index].G = g * 0.7; // Só pra Lembrar, era 0.3
+    leds[index].B = b * 0.7;
 }
 
 // Limpa todos os LEDs
@@ -73,7 +73,7 @@ void ledUpdateHard() {
     }
 }
 
-// Toca uma nota no buzzer
+// Toca uma nota no buzzer ainda não funciona direito
 void playNote(uint16_t frequency, uint32_t duration_ms) {
     gpio_set_function(BUZZER_PIN, GPIO_FUNC_PWM);
     uint slice_num = pwm_gpio_to_slice_num(BUZZER_PIN);
