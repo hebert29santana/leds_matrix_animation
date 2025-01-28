@@ -17,6 +17,7 @@
 #include "animate_MVLMBH.h" // Arquivo de Valentina
 #include "animacao_igor.h" // Arquivo de Igor
 #include "animacao_Gustavo.h" // Arquivo de Gustavo
+#include "animacao_paulo.h" // Aquivo de Paulo
 
 #define NUM_PIXELS 25
 
@@ -271,6 +272,15 @@ int main()
       {
         start_buzzer(500);
         animacao_igor(leds2
+      , valor_led, pio, sm);
+      }
+    }
+    else if (tecla == TECLA_5) // Animação 5 de Paulo
+    {
+      for (int i = 0; i < 4; i++)
+      {
+        start_buzzer(500);
+        animacao_paulo(leds2
       , valor_led, pio, sm);
       }
     }

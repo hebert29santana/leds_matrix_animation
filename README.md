@@ -26,11 +26,14 @@ Tecla 1 - Animação 1 - Desenvolvida por Gustavo
 Tecla 2 - Animação 2 - Desenvolvida por Hebert  
 Tecla 3 - Animação 3 - Desenvolvida por Maria Valentina  
 Tecla 4 - Animação 4 - Desenvolvida por Igor  
-Tecla 5 - Animação 5 -  
+
+Tecla 5 - Animação 5 - Deenvolvida por Paulo
+
 Tecla 6 - Animação 6 -  
 Tecla 7 - Animação 7 -  
 Tecla 8 - Animação 8 -  
 Tecla 9 - Animação 9 -  
+
 
 ## Link do Vídeo
 
