@@ -10,18 +10,18 @@ Hebert Costa Vaz Santana - Líder e Desenvolvedor
 
 # Como Funciona?
 
-Tecla A - Apaga todos os Leds
-Tecla B - Ligam os Leds Azuis em 100%
-Tecla C - Ligam os Leds Vermelhos em 80%
-Tecla D - Ligam os Leds Verdes em 50%
-Tecla # - Ligam os Leds Brancos em 20%
-Tecla * - Reboot no sistema
+Tecla A - Apaga todos os Leds  
+Tecla B - Ligam os Leds Azuis em 100%  
+Tecla C - Ligam os Leds Vermelhos em 80%  
+Tecla D - Ligam os Leds Verdes em 50%  
+Tecla # - Ligam os Leds Brancos em 20%  
+Tecla * - Reboot no sistema  
 
-Tecla 0 - Animação de Teste - Desenvolvida por Welton
-Tecla 1 - Animação 1 - Desenvolvida por Welton
-Tecla 2 - Animação 2 - Desenvolvida por Hebert
-Tecla 3 - Animação 3 - Desenvolvida por Maria Valentina
-Tecla 4 - Animação 4 - Desenvolvida por Igor
+Tecla 0 - Animação 0 - Desenvolvida por Welton  
+Tecla 1 - Animação 1 - Desenvolvida por Gustavo  
+Tecla 2 - Animação 2 - Desenvolvida por Hebert  
+Tecla 3 - Animação 3 - Desenvolvida por Maria Valentina  
+Tecla 4 - Animação 4 - Desenvolvida por Igor  
 Tecla 5 - Animação 5 - 
 Tecla 6 - Animação 6 -
 Tecla 7 - Animação 7 - 

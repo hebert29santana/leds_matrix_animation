@@ -16,6 +16,7 @@
 #include "animate_HCVS.h" // Arquivo de Hebert
 #include "animate_MVLMBH.h" // Arquivo de Valentina
 #include "animacao_igor.h" // Arquivo de Igor
+#include "animacao_Gustavo.h" // Arquivo de Gustavo
 
 #define NUM_PIXELS 25
 
@@ -230,12 +231,21 @@ int main()
     {
       reset_usb_boot(0, 0);
     }
-    else if (tecla == TECLA_0) // Animação de Teste by Welton
+    else if (tecla == TECLA_0) // Animação 0 by Welton
     {
       for (int i = 0; i < 4; i++)
       {
         start_buzzer(500);
         animacao_exe(leds2
+      , valor_led, pio, sm);
+      }
+    }
+    else if (tecla == TECLA_1) // Animação 1 by Gustavo
+    {
+      for (int i = 0; i < 4; i++)
+      {
+        start_buzzer(500);
+        animacao_Gustavo(leds2
       , valor_led, pio, sm);
       }
     }
@@ -264,6 +274,7 @@ int main()
       , valor_led, pio, sm);
       }
     }
+
 
     sleep_ms(500);
     printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));
