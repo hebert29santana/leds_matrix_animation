@@ -262,7 +262,6 @@ int main()
         start_buzzer(500);
         animacao_igor(leds2
       , valor_led, pio, sm);
-        
       }
     }
 

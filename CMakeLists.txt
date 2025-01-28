@@ -37,6 +37,7 @@ pico_sdk_init()
 
 add_executable(pio_matrix pio_matrix.c animacao_exe.c animate_HCVS.c animate_MVLMBH.c animacao_igor.c)
 
+
 pico_set_program_name(pio_matrix "pio_matrix")
 pico_set_program_version(pio_matrix "0.1")
 
