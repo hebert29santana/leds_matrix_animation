@@ -17,6 +17,7 @@
 #include "animate_MVLMBH.h" // Arquivo de Valentina
 #include "animacao_igor.h" // Arquivo de Igor
 #include "animacao_Gustavo.h" // Arquivo de Gustavo
+#include "animacao_paulo.h" // Aquivo de Paulo
 
 #define NUM_PIXELS 25
 
