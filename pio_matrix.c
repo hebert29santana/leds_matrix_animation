@@ -14,6 +14,9 @@
 
 #include "animacao_exe.h"
 #include "animate_HCVS.h"
+#include "animate_MVLMBH.h"
+
+
 
 
 
@@ -245,6 +248,15 @@ int main()
       {
         start_buzzer(500);
         animate_HCVS();
+      }
+    }
+
+     else if (tecla == TECLA_3) // Animação 3 by Maria Valentina
+    {
+      for (int i = 0; i < 4; i++)
+      {
+        start_buzzer(500);
+        animate_MVLMBH();
       }
     }
 

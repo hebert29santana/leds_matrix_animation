@@ -45,6 +45,7 @@
         "animacao_exe.h": "c",
         "stdlib.h": "c",
         "stdio.h": "c",
-        "clocks.h": "c"
+        "clocks.h": "c",
+        "pio.h": "c"
     }
 }
