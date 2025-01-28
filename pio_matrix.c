@@ -12,11 +12,10 @@
 #include "pio_matrix.pio.h"
 // #include "ws2818b.pio.h" // Não precisa mais chamar essa biblioteca aqui
 
-#include "animacao_exe.h"
-#include "animate_HCVS.h"
-#include "animacao_igor.h"
-
-
+#include "animacao_exe.h" // Arquivo de Welton
+#include "animate_HCVS.h" // Arquivo de Hebert
+#include "animate_MVLMBH.h" // Arquivo de Valentina
+#include "animacao_igor.h" // Arquivo de Igor
 
 #define NUM_PIXELS 25
 
@@ -248,7 +247,15 @@ int main()
         animate_HCVS();
       }
     }
-    else if (tecla == TECLA_4) // Animação de Igor
+    else if (tecla == TECLA_3) // Animação 3 by Maria Valentina
+    {
+      for (int i = 0; i < 4; i++)
+      {
+        start_buzzer(500);
+        animate_MVLMBH();
+      }
+    }
+    else if (tecla == TECLA_4) // Animação 4 de Igor
     {
       for (int i = 0; i < 4; i++)
       {
