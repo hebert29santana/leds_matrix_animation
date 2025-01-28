@@ -12,13 +12,10 @@
 #include "pio_matrix.pio.h"
 // #include "ws2818b.pio.h" // Não precisa mais chamar essa biblioteca aqui
 
-#include "animacao_exe.h"
-#include "animate_HCVS.h"
-#include "animate_MVLMBH.h"
-
-
-
-
+#include "animacao_exe.h" // Arquivo de Welton
+#include "animate_HCVS.h" // Arquivo de Hebert
+#include "animate_MVLMBH.h" // Arquivo de Valentina
+#include "animacao_igor.h" // Arquivo de Igor
 
 #define NUM_PIXELS 25
 
@@ -250,8 +247,7 @@ int main()
         animate_HCVS();
       }
     }
-
-     else if (tecla == TECLA_3) // Animação 3 by Maria Valentina
+    else if (tecla == TECLA_3) // Animação 3 by Maria Valentina
     {
       for (int i = 0; i < 4; i++)
       {
@@ -259,7 +255,16 @@ int main()
         animate_MVLMBH();
       }
     }
-
+    else if (tecla == TECLA_4) // Animação 4 de Igor
+    {
+      for (int i = 0; i < 4; i++)
+      {
+        start_buzzer(500);
+        animacao_igor(leds2
+      , valor_led, pio, sm);
+        
+      }
+    }
 
     sleep_ms(500);
     printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));
