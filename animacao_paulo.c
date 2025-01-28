@@ -1,3 +1,7 @@
+//Paulo Cesar Almeida Menezes
+//tic370101122
+
+
 #include "animacao_paulo.h"
 #include "pico/stdlib.h"
 
