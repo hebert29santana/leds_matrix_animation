@@ -17,6 +17,7 @@
 #include "animacao_igor.h"
 
 
+
 #define NUM_PIXELS 25
 
 #define OUT_PIN 7
@@ -246,7 +247,6 @@ int main()
         start_buzzer(500);
         animate_HCVS();
       }
-    }
     }
     else if (tecla == TECLA_4) // Animação de Igor
     {
