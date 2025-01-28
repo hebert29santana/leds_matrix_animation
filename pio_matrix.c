@@ -275,6 +275,15 @@ int main()
       , valor_led, pio, sm);
       }
     }
+    else if (tecla == TECLA_5) // Animação 5 de Paulo
+    {
+      for (int i = 0; i < 4; i++)
+      {
+        start_buzzer(500);
+        animacao_paulo(leds2
+      , valor_led, pio, sm);
+      }
+    }
 
 
     sleep_ms(500);
