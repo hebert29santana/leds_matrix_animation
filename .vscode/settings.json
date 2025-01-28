@@ -46,7 +46,8 @@
         "stdlib.h": "c",
         "stdio.h": "c",
         "clocks.h": "c",
-        "animate_hcvs.h": "c"
+        "animate_hcvs.h": "c",
+        "animacao_gustavo.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

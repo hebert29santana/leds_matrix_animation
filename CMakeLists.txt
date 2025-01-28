@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(pio_matrix pio_matrix.c animacao_exe.c animate_HCVS.c animate_MVLMBH.c animacao_igor.c)
+add_executable(pio_matrix pio_matrix.c animacao_exe.c animate_HCVS.c animate_MVLMBH.c animacao_igor.c animacao_Gustavo.c)
 
 
 pico_set_program_name(pio_matrix "pio_matrix")
