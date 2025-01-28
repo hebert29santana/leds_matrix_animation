@@ -21,7 +21,7 @@ Tecla 0 - Animação de Teste - Desenvolvida por Welton
 Tecla 1 - Animação 1 - Desenvolvida por Welton
 Tecla 2 - Animação 2 - Desenvolvida por Hebert
 Tecla 3 - Animação 3 - 
-Tecla 4 - Animação 4 -
+Tecla 4 - Animação 4 - Desenvolvida por Igor
 Tecla 5 - Animação 5 - 
 Tecla 6 - Animação 6 -
 Tecla 7 - Animação 7 - 

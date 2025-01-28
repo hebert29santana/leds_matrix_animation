@@ -14,7 +14,7 @@
 
 #include "animacao_exe.h"
 #include "animate_HCVS.h"
-
+#include "animacao_igor.h"
 
 
 #define NUM_PIXELS 25
@@ -247,7 +247,16 @@ int main()
         animate_HCVS();
       }
     }
-
+    }
+    else if (tecla == TECLA_4) // Animação de Igor
+    {
+      for (int i = 0; i < 4; i++)
+      {
+        start_buzzer(500);
+        animacao_igor(leds2
+      , valor_led, pio, sm);
+      }
+    }
 
     sleep_ms(500);
     printf("\nfrequeência de clock %ld\r\n", clock_get_hz(clk_sys));
