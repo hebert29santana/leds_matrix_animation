@@ -11,6 +11,7 @@ Welton Almeida de Matos - TIC370100649 - Desenvolvedor
 Maria Valentina da Luz Mattos Baracat Habib - TIC370101020 - Desenvolvedora  
 Gustavo Ferreira Santos - TIC370101484 - Desenvolvedor  
 Igor Emanuel Soares Leal - TIC370101965 - Desenvolvedor  
+Paulo César Almeida Menezes - TIC370101122 - Desenvolvedor  
 
 ## Como Funciona?
 
@@ -26,9 +27,7 @@ Tecla 1 - Animação 1 - Desenvolvida por Gustavo
 Tecla 2 - Animação 2 - Desenvolvida por Hebert  
 Tecla 3 - Animação 3 - Desenvolvida por Maria Valentina  
 Tecla 4 - Animação 4 - Desenvolvida por Igor  
-
 Tecla 5 - Animação 5 - Deenvolvida por Paulo
-
 Tecla 6 - Animação 6 -  
 Tecla 7 - Animação 7 -  
 Tecla 8 - Animação 8 -  
@@ -36,6 +35,7 @@ Tecla 9 - Animação 9 -
 
 
 ## Link do Vídeo
+
 
 
 ## Licença
